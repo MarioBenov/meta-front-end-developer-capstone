@@ -1,0 +1,14 @@
+.content-section {
+  width: 100%;
+}
+
+.content-section.green {
+  background-color: var(--color-primary-1);
+  color: var(--color-white);
+}
+
+.content-section > * {
+  width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+}

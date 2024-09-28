@@ -1,0 +1,26 @@
+.footer {
+  background-color: var(--color-primary-1);
+  padding: 3rem 0;
+  color: var(--color-white);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 900px;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer h2 {
+  font-size: 1.25rem;
+}
+
+.footer img {
+  max-width: 80px;
+}

@@ -1,0 +1,18 @@
+.menu-section {
+  margin-bottom: 3rem;
+}
+
+.header-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.menu-list {
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

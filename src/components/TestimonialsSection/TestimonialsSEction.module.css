@@ -1,0 +1,16 @@
+.testimonials-section {
+  padding: 3rem 0;
+}
+
+.testimonials-section > h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.testimonial-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}

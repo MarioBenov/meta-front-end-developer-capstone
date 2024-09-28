@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+:root {
+  --color-primary-1: #495E57;
+  --color-primary-2: #F4CE14;
+  --color-secondary-1: #EE9972;
+  --color-secondary-2: #FBDABB;
+  --color-highlight-1: #EDEFEE;
+  --color-highlight-2: #333333;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --color-var-1: #c3a510;
+
+  --content-width: 900px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2 {
+  margin: 0;
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html, p, span, li, div, body {
+  font-family: "Karla", sans-serif;
 }

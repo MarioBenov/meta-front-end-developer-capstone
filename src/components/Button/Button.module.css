@@ -1,0 +1,16 @@
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+}
+
+.button.primary {
+  color: var(--color-black);
+  background: var(--color-primary-2);
+}
+
+.button.primary:hover {
+  background: var(--color-var-1);
+}
