@@ -27,7 +27,7 @@ export default function MenuSection() {
   )), [])
 
   return (
-    <ContentSection>
+    <ContentSection id="menu">
       <div className={styles['menu-section']}>
         <div className={styles['header-row']}>
           <h1>This weeks specials!</h1>

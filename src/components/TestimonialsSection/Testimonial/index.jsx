@@ -19,7 +19,7 @@ export default function MenuEntry({
       </div>
 
       <div className={styles['user']}>
-        <img src={image} />
+        <img src={image} alt="" />
         <span>{name}</span>
       </div>
 

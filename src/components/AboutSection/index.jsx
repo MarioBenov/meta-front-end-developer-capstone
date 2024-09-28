@@ -3,7 +3,7 @@ import ContentSection from '../ContentSection'
 
 export default function AboutSection() {
   return (
-    <ContentSection>
+    <ContentSection id="about">
       <div className={styles['about-section']}>
         <div className={styles['description']}>
           <h1>Little Lemon</h1>

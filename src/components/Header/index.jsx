@@ -1,4 +1,5 @@
-import {useMemo} from 'react';
+import { useEffect, useMemo } from 'react';
+import { NavLink, useLocation } from "react-router-dom";
 import styles from './Header.module.css';
 
 const navOptions = [{
@@ -6,13 +7,13 @@ const navOptions = [{
   path: '/'
 }, {
   label: 'About',
-  path: '/about'
+  path: '/#about'
 }, {
   label: 'Menu',
-  path: '/menu'
+  path: '/#menu'
 }, {
   label: 'Reservations',
-  path: '/reservations'
+  path: '/booking'
 }, {
   label: 'Order Online',
   path: '/order'
@@ -22,9 +23,19 @@ const navOptions = [{
 }]
 
 export default function Header() {
+  const location = useLocation()
+  useEffect(() => {
+    const element = document.getElementById(location.hash.replace("#", ""));
+
+    window.scrollTo({
+      behavior: element ? "smooth" : "auto",
+      top: element ? element.offsetTop : 0
+    });
+  }, [location.hash]);
+
   const options  = useMemo(() => navOptions.map(({path, label}) =>
     <li key={path}>
-      <a href={path}>{label}</a>
+      <NavLink to={path}>{label}</NavLink>
     </li>
   ), [])
 

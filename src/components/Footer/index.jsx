@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles['footer']}>
       <div className={styles['inner']}>
         <div>
-          <img src="icons_assets/Asset 9@4x.png" />
+          <img src="icons_assets/Asset 9@4x.png" alt="" />
         </div>
 
         <div>

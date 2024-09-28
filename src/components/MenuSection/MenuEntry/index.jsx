@@ -19,7 +19,7 @@ export default function MenuEntry({
 
         <div className={styles['delivery']}>
           <span>Order a delivery</span>
-          <img src='icons_assets/delivery_bike.svg' width={24} height={24}/>
+          <img src='icons_assets/delivery_bike.svg' width={24} height={24} alt="" />
         </div>
       </div>
     </div>
