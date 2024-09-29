@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 import BookingForm from '../components/BookingForm'
 import {fetchAPI, submitAPI} from '../api'
 
-function updateTimes(state, newDate) {
+export function updateTimes(state, newDate) {
   if(!newDate) return state
 
   return fetchAPI(newDate)
 }
 
-function initializeTimes() {
+export function initializeTimes() {
     return fetchAPI(new Date())
 }
 

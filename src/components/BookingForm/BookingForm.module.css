@@ -2,4 +2,10 @@
   display: grid;
   max-width: 200px;
   gap: 20px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.error {
+  color: var(--color-var-2);
 }

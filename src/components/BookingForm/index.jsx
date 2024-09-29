@@ -3,6 +3,7 @@ import { useFormik } from "formik";
 import * as Yup from 'yup';
 
 import styles from './BookingForm.module.css'
+import Button from '../Button';
 
 const formatDate = (date) => `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`
 
@@ -55,7 +56,7 @@ export default function BookingForm({availableTimes, onDateChange, onSubmitForm}
         }}
       />
       {
-        formik.errors.date && <span>{formik.errors.date}</span>
+        formik.errors.date && <span className={styles['error']}>{formik.errors.date}</span>
       }
 
       <label htmlFor="res-time">Choose time</label>
@@ -73,7 +74,7 @@ export default function BookingForm({availableTimes, onDateChange, onSubmitForm}
         {...formik.getFieldProps('guests')}
       />
       {
-        formik.errors.guests && <span>{formik.errors.guests}</span>
+        formik.errors.guests && <span className={styles['error']}>{formik.errors.guests}</span>
       }
 
       <label htmlFor="occasion">Occasion</label>
@@ -82,7 +83,7 @@ export default function BookingForm({availableTimes, onDateChange, onSubmitForm}
           <option>Anniversary</option>
       </select>
 
-      <input type="submit" value="Make Your reservation" aria-label="Submit Reservation" disabled={!formik.isValid} />
+      <Button type="submit" value="Make Your reservation" aria-label="Submit Reservation" disabled={!formik.isValid} > Make Your reservation </Button>
     </form>
   )
 }

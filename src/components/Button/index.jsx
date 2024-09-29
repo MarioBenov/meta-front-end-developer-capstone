@@ -2,12 +2,13 @@ import styles from './Button.module.css'
 import {noop} from 'lodash'
 
 export default function Button({
-  type = 'primary',
+  kind = 'primary',
   onClick = noop,
-  children = null
+  children = null,
+  ...attrs
 }) {
   return (
-    <button className={`${styles['button']} ${styles[type]}`} onClick={onClick}>
+    <button className={`${styles['button']} ${styles[kind]}`} onClick={onClick} {...attrs}>
       {children}
     </button>
   );

@@ -6,11 +6,19 @@
   font-family: "Karla", sans-serif;
 }
 
+.button:disabled {
+  cursor: not-allowed;
+}
+
 .button.primary {
   color: var(--color-black);
   background: var(--color-primary-2);
 }
 
-.button.primary:hover {
+.button.primary:disabled {
+  background: var(--color-var-3);
+}
+
+.button.primary:hover:not(:disabled) {
   background: var(--color-var-1);
 }
